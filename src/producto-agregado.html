@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    /> -->
+    <link href="./output.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIRKOF</title>
+  </head>
+
+  <body>
+    <div class="mx-auto mt-5 w-[87%] max-w-[1000px]">
+      <header>
+        <img
+          src="./assets/logo.png"
+          alt="kirkof logo"
+          class="w-[100px] md:w-[125px]"
+        />
+        <div
+          class="md:bg-gray-light hidden md:mb-8 md:mt-8 md:block md:h-[1px]"
+        ></div>
+        <h1 class="mb-3 mt-5 text-xl font-bold md:text-2xl">
+          Buscar producto o libro
+        </h1>
+        <div
+          class="md: flex flex-col space-y-3 md:flex-row md:space-x-4 md:space-y-0"
+        >
+          <input
+            type="text"
+            placeholder="Nombre del producto"
+            class="border-gray-light focus:outline-dark rounded-lg border px-4 py-2 focus:outline focus:outline-1 md:w-[100%]"
+          />
+          <button
+            class="bg-dark hover:bg-dark-hover active:bg-dark-clicked rounded-lg px-4 py-2 text-white md:w-[25%]"
+          >
+            Buscar
+          </button>
+        </div>
+        <p class="text-success mt-4 text-sm">
+          El siguiente producto se agregó correctamente.
+        </p>
+      </header>
+      <main class="mb-10">
+        <section class="mt-5">
+          <h2 class="subtitle">Libro</h2>
+          <div
+            class="border-gray-light max-w-[700px] rounded-lg border-[1px] border-solid shadow-lg md:mx-auto"
+          >
+            <div class="space-y-1 p-6 pb-2">
+              <h3 class="text-lg font-bold">Cien años de soledad</h3>
+              <div class="flex justify-between">
+                <p class="font-bold">ISBN</p>
+                <p>0123456789012</p>
+              </div>
+              <div class="flex justify-between">
+                <p class="font-bold">Departamento</p>
+                <p class="bg-badge-salmon rounded-md px-2 py-[1px]">
+                  Administración
+                </p>
+              </div>
+              <div class="flex justify-between">
+                <p class="font-bold">Fecha y hora</p>
+                <p>12/12/2024 12:00</p>
+              </div>
+            </div>
+
+            <div class="bg-gray-light h-[1px]"></div>
+            <div class="p-6 pt-3">
+              <div class="flex justify-between">
+                <p class="font-bold">Cantidad diponible</p>
+                <p font-bold>100</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

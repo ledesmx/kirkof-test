@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    /> -->
+    <link href="./output.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIRKOF</title>
+  </head>
+
+  <body class="">
+    <div class="mx-auto mt-5 w-[87%] max-w-[1000px]">
+      <header>
+        <img
+          src="./assets/logo.png"
+          alt="kirkof logo"
+          class="w-[100px] md:w-[125px]"
+        />
+        <div
+          class="md:bg-gray-light hidden md:mb-8 md:mt-8 md:block md:h-[1px]"
+        ></div>
+        <h1 class="mb-3 mt-5 text-xl font-bold md:text-2xl">
+          Buscar producto o libro
+        </h1>
+        <div
+          class="md: flex flex-col space-y-3 md:flex-row md:space-x-4 md:space-y-0"
+        >
+          <input
+            type="text"
+            placeholder="Nombre del producto"
+            class="border-gray-light focus:outline-dark rounded-lg border px-4 py-2 focus:outline focus:outline-1 md:w-full"
+          />
+          <button
+            class="bg-dark hover:bg-dark-hover active:bg-dark-clicked rounded-lg px-4 py-2 text-white md:w-[25%]"
+          >
+            Buscar
+          </button>
+        </div>
+        <p class="text-dark mt-4 text-sm">
+          Producto no encontrado. Puedes agregar un nuevo producto.
+        </p>
+      </header>
+      <main class="mb-10">
+        <section class="mt-5">
+          <h2 class="subtitle">Nuevo producto</h2>
+          <form action="" class="max-w-[700px] md:mx-auto">
+            <label for="nombre" class="mb-2 block font-medium">Nombre</label>
+            <input
+              id="nombre"
+              type="text"
+              placeholder="Nombre del producto"
+              class="border-gray-light focus:outline-dark mb-3 w-full rounded-lg border px-4 py-2 focus:outline focus:outline-1"
+            />
+            <label for="tipo" class="mb-2 block font-medium">Tipo</label>
+            <select
+              name="tipo"
+              id="tipo"
+              class="outline-gray-light focus:outline-dark mb-3 w-[100%] rounded-lg border border-r-[15px] border-transparent bg-white px-4 py-3 outline outline-1 focus:outline focus:outline-1"
+            >
+              <option value="libro" selected>Libro</option>
+              <option value="producto">Producto</option>
+            </select>
+            <label for="isbn" class="mb-2 block font-medium">ISBN</label>
+            <input
+              id="isbn"
+              type="text"
+              placeholder="1234567890123"
+              class="border-gray-light focus:outline-dark mb-3 w-full rounded-lg border px-4 py-2 focus:outline focus:outline-1"
+            />
+            <label for="departamento" class="mb-2 block font-medium"
+              >Departamento</label
+            >
+            <select
+              name="departamento"
+              id="departamento"
+              class="outline-gray-light focus:outline-dark mb-3 w-full rounded-lg border border-r-[15px] border-transparent bg-white px-4 py-3 outline outline-1 focus:outline focus:outline-1"
+            >
+              <option value="general" selected>General</option>
+              <option value="programacion">Programación</option>
+              <option value="administracion">Administración</option>
+              <option value="diseno">Diseño</option>
+              <option value="multimedia">Multimedia</option>
+            </select>
+            <label for="fecha" class="mb-2 block font-medium"
+              >Fecha y hora</label
+            >
+            <input
+              type="datetime-local"
+              id="fecha"
+              name="fecha"
+              class="border-gray-light focus:outline-dark mb-3 w-full rounded-lg border px-4 py-2 focus:outline focus:outline-1"
+            />
+          </form>
+          <div class="max-w-[700px] space-y-3 md:mx-auto">
+            <p class="mb-2 block font-medium">Cantidad a agregar</p>
+            <div class="mx-auto max-w-[430px] space-y-3">
+              <div class="bg-cream flex space-x-1 rounded-lg">
+                <button
+                  class="text-dark hover:text-yellow active:text-yellow-hover p-1 px-3 text-2xl font-bold hover:cursor-pointer"
+                >
+                  -
+                </button>
+                <input
+                  type="text"
+                  class="w-10 flex-grow bg-transparent text-center focus:outline-none"
+                  value="0"
+                />
+                <button
+                  class="text-dark hover:text-yellow active:text-yellow-hover p-1 px-3 text-2xl font-bold hover:cursor-pointer"
+                >
+                  +
+                </button>
+              </div>
+              <button
+                class="bg-yellow hover:bg-yellow-hover active:bg-yellow-clicked w-[100%] rounded-lg px-4 py-2 font-bold text-black"
+              >
+                Añadir carga
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
